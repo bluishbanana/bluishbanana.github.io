@@ -757,7 +757,9 @@ p {
   font-family: 'Jost';
   font-weight: 700;
   text-transform: uppercase;
+  cursor: pointer;
 }
+
 
 
 
