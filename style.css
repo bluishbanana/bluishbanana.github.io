@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-family: 'Jost';
   overflow-x: hidden;
-  background-image: url(/background3.svg);
+  background-image: url(/images/background3.svg);
   background-repeat: no-repeat;
   background-position: 50% 27%;
 }
@@ -708,19 +708,19 @@ button {
 
 
 .guide.shapes {
-  background-image: url(/guide.png);
+  background-image: url(/images/guide.png);
 }
 
 .guide.price {
-  background-image: url(/guide2.png);
+  background-image: url(/images/guide2.png);
 }
 
 .guide.lab {
-  background-image: url(/guide3.png);
+  background-image: url(/images/guide3.png);
 }
 
 .guide.carat {
-  background-image: url(/guide4.png);
+  background-image: url(/images/guide4.png);
 }
 
 
@@ -802,7 +802,7 @@ button {
   text-align: center;
   margin: 8rem auto;
   background-color: #f9fafd;
-  background-image: url(/hero_pattern.png);
+  background-image: url(/images/hero_pattern.png);
   padding: 3rem 0;
   box-shadow: inset 0 0 10px #d9dadc;
 }
