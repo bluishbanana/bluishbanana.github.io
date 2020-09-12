@@ -1,13 +1,12 @@
 .wrapper {
   width: 650px;
+  max-width: 90%;
   margin: 0 auto;
   font-size: 20px;
   position: relative;
 }
 
-body {
-  position: relative;
-}
+
 
 img {
   max-width: 100%;
@@ -23,3 +22,7 @@ img {
   transform: translateX(0%) scale(1);
   opacity: 1;
 }
+
+
+
+
