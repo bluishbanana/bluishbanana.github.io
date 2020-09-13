@@ -13,9 +13,14 @@ function debounce(func, wait = 20, immediate = true) {
   };
 };
 
+function* offsetParents(offsetParent) {
+  while (offsetParent !== document.body) {
+    yield offsetParent
+    offsetParent = offsetParent.offsetParent
+  }
+}
 
-
-
+const distanceToBodyTop = (offsetParent) => ([...offsetParents(offsetParent)].reduce((a, v) => a + v.offsetTop, 0))
 
 const sliderImages = document.querySelectorAll('.slide_in');
 
@@ -26,9 +31,8 @@ function checkSlide() {
     // half way through the image
     const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
     // bottom of the image
-
-    const imageBottom = sliderImage.offsetTop + sliderImage.height;
-    const isHalfShown = slideInAt > sliderImage.offsetTop;
+    const imageBottom = distanceToBodyTop(sliderImage) + sliderImage.height;
+    const isHalfShown = slideInAt > distanceToBodyTop(sliderImage);
     const isNotScrolledPast = window.scrollY < imageBottom;
 
 
